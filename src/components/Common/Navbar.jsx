@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -26,12 +27,12 @@ function Navbar() {
             >
               Shop
             </a>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="text-white hover:text-[#F5AD18] transition-colors duration-300"
             >
               About
-            </a>
+            </Link>
             <a
               href="#contact"
               className="text-white hover:text-[#F5AD18] transition-colors duration-300"
@@ -42,8 +43,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button className="text-white hover:text-[#F5AD18] focus:outline-none">
-            </button>
+            <button className="text-white hover:text-[#F5AD18] focus:outline-none"></button>
           </div>
         </div>
       </div>

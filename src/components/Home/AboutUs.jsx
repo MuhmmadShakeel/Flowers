@@ -17,7 +17,7 @@ function AboutUs() {
           className="md:w-5/12 flex justify-center"
         >
           <img
-            src="https://i.pinimg.com/736x/9b/a2/f4/9ba2f4e48e3a1d9ce6c3d7d317c43bf9.jpg"
+            src="https://i.pinimg.com/736x/1b/37/48/1b3748e8c6f162d96d894fd2675ded18.jpg"
             alt="Beautiful flowers"
             className="rounded-xl shadow-lg hover:scale-105 transition-transform duration-500 w-4/5 md:w-full h-72 md:h-96 object-cover"
           />

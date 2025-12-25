@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutMission = () => {
   const values = [
@@ -16,10 +18,21 @@ const AboutMission = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      easing: "ease-in-out",
+      once: true,
+      offset: 120,
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        <div>
+        
+        {/* Text Content */}
+        <div data-aos="fade-right">
           <h2 className="text-4xl font-bold text-green-900 mb-6">
             Bringing Nature’s{" "}
             <span className="text-[#F5AD18]">Best to You</span>
@@ -31,17 +44,22 @@ const AboutMission = () => {
             speak directly to the heart.
           </p>
         </div>
+
+        {/* Values */}
         <div className="grid grid-cols-1 gap-6">
           {values.map((v, i) => (
             <div
               key={i}
               className="p-6 border-l-4 border-[#F5AD18] bg-green-50 shadow-sm"
+              data-aos="fade-left"
+              data-aos-delay={i * 150}
             >
               <h3 className="text-xl font-bold text-green-900">{v.title}</h3>
               <p className="text-gray-600">{v.desc}</p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

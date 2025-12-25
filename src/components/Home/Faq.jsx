@@ -75,7 +75,7 @@ function Faq() {
 
         <div className="md:w-1/2 mt-42 flex justify-center">
           <img
-            src="https://i.pinimg.com/1200x/7a/77/10/7a77109fe6ad0014ab91b72ba05a2f0b.jpg"
+            src="https://i.pinimg.com/736x/13/ef/57/13ef57756de974640c8db915b95b9c9a.jpg"
             alt="Flowers FAQ"
             className="rounded-xl shadow-lg object-cover w-full h-96"
           />
